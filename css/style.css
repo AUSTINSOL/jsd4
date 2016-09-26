@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	cursor:  url(foo.cur), url(http://www.cursor.cc/cursor/57/66/cursor.png), auto;
+}
+
+canvas {
+	width: 100vw;
+	height: 100vh;
+}
+
+#labelDiv {
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    color: white;
+    font-family: 'Courier New';
+    text-align: left;
+    /*background-color: rgba(0,0,0,0.2);*/
+    padding: 20px;
+    /*cursor: url(foo.cur), url(http://www.cursor.cc/cursor/57/66/cursor.png), auto;*/
+    cursor: pointer; cursor: hand; 
+}
+
+h1 {
+	font-size: 26px;
+	font-family: 'Courier New';
+	font-weight:normal;
+	margin: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	margin: 0;
+}
