@@ -1,10 +1,11 @@
 body {
-	background: #89998F;
+	background: #252525;
 	font-family: "Avenir", Arial, sans-serif;
 	text-align: center;
 	padding: 20px;
 	min-width: 375px;
 	max-width: 500px;
+	color: #ffffff;
 }
 button {
 	background: #5ABD7F;
