@@ -46,8 +46,6 @@ generateStartup();
 	startup.innerHTML = startupIdea;
 }
 
-
-
 // the saveFavorite function is called when
 // the "Save Favorite" button is clicked
 function saveFavorite() {
@@ -58,8 +56,6 @@ function saveFavorite() {
 
 }
 
-
-
 // the Print Favorites function is called when
 // the "Print Favorites" button is clicked
 function printFavorites() {
@@ -67,12 +63,10 @@ function printFavorites() {
 	// before displaying new list of favorites
 	list.innerHTML = '';
 
-
 	// TODO: concatenate all the favorites into one string
 	// - hint: loop through all the favorites
 	// - this should be stored in a variable named favoritesText
 	// - each favorite should have an html br element between it (EG: "<br>")
-
 
 
 	// DONE: update the list element with the
