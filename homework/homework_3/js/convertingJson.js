@@ -48,10 +48,10 @@ http://jsonlint.com/
 Did it create a valid JSON string?
 */
 
-// var jsonStringNew = function() {
-//     var x = JSON.stringify(links);
-//     console.log(x)
-// };
+var jsonStringNew = function() {
+    var x = JSON.stringify(links);
+    console.log(x)
+};
 
 console.log(JSON.stringify(links));
 

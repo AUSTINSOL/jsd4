@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/wingcss/0.1.8/wing.min.css
+">
+</head>
+
+<body>
+    <h1>lorem</h1>
+    <p> blaaaah</p>
+    <ul>
+        <li>consetectur</li>
+        <li>balhsdfn</li>
+        <li>asldfasdfa</li>
+        <p>rando cat</p>
+        <img width="400" img src="http://thecatapi.com/api/images/get?format=src&type=gif" alt="">
+        </li>
+    </ul>
+
+    <canvas id="bgcanvas" width="200" height="200"></canvas>
+    <div>
+    </div>
+    <script>
+    var div = document.querySelector("div");
+    div.innerHTML = "<h1>dafuqisdisshit</h2>";
+
+    // Technique #1 
+    var ul = document.querySelector("ul");
+
+    function createMenuItem(argument) {
+
+        //1 create elements
+        var li = document.createElement("li");
+        var p = document.createElement("p");
+        var img = document.createElement("img")
+
+        //2 content and attributes
+        p.innerHTML = "rando cat";
+        img.src = "http://thecatapi.com/api/images/get?format=src&type=gif";
+        img.width = "400";
+
+        //3 append new elements to DOM
+        li.appendChild(p);
+        li.appendChild(img);
+        ul.appendChild(li);
+        console.log(li);
+    }
+    //techinique #2 using innerHTML
+    function createMenuItemTemplate() {
+        var li = document.createElement("li");
+        var template = 
+            "<p>Rando</p>" +
+            '<img src="http://loremflickr.com/320/240?random=3 alt="">' +
+            "</li>";
+        li.innerHTML = template;
+        ul.appendChild(li);
+        console.log(template);
+    }
+    </script>
+<!-- trying this background things -->
+    <script>
+    	function getBG(){
+  var canvas = document.getElementById('bgcanvas'),
+      context = canvas.getContext('2d'),
+      cX = canvas.width / 2,
+      cY = canvas.height / 2;
+      context.beginPath();
+      context.arc(cX, cY, 70, 0, 2 * Math.PI, false);
+      context.fillStyle = 'green';
+      context.fill();
+      context.stroke();
+  return canvas.toDataURL("image/jpeg");
+}
+
+document.body.style.backgroundImage = 'url("http://thecatapi.com/api/images/get?format=src&type=gif")';
+setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
+    </script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
