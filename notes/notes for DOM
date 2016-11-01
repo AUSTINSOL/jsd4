@@ -1,0 +1,38 @@
+notes for DOM
+
+3 host objects
+1.Navigator
+2.Window
+3.Document
+
+
+document 
+	- createElement()
+	- querySelector()
+	- appendChild()
+
+
+
+1argument
+input  (string) 
+->
+querySelector()
+->
+output (element)
+
+
+
+//Events//
+type (string)
+target (element)
+
+example=
+
+element.addEventListener(event type, event handler function)
+button.addEventListener('click', refreshCart)
+
+
+call "refresh cart" function
+when a "click" E
+
+

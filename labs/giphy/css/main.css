@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+}
+
+
+.gif {
+	margin: 20px;
+	padding: 20px 0;
+	border-top: 2px solid blue;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="gifs"></div>
+    <!-- Handlebars Template -->
+    <script id="gif-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="gif" id="{{id}}">
+            <!-- .ID -->
+            <h2>{{id}}</h2>
+        <img src="{{images.original.url}}" alt="">
+            <!-- URL -->
+            <a href="{{url}}">{{url}}</a>
+            <!-- Rating -->
+            <p>{{rating}}</p>
+        </div>
+    </script>
+    	{{/each}}
+</body>
+
+ <!--scripts -->
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8" async defer>
+    </script>
+</html>
