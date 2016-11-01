@@ -37,4 +37,4 @@ const gifs = document.querySelector('.gifs');
 var gifTemplateFn = Handlebars.compile(gifTemplate.innerHTML);
 gifs.innerHTML = gifTemplateFn(mockData);
 
-//
+//what else
